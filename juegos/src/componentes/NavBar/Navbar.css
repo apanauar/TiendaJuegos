@@ -1,75 +1,51 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Press Start 2P', cursive; /* Estilo retro de videojuegos */
-    background-color: #121212;
-    color: #fff;
-}
-
-.navbar {
-    background-color: #1b1b1b;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+header {
+    background-color: #1c1c1c;  
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between; 
+    color: #fff;  
+    width: 100%;
+    box-sizing: border-box;  
 }
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end; /* Alinea los elementos al final del navbar */
+header h1 {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif; 
     margin: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    width: 60%;  
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between; 
+    list-style: none;
     padding: 0;
-    width: 50%; /* Ajusta el ancho para que quede espacio para el título y el carrito */
+    margin: 0;
+    width: 100%;  
 }
 
-.navbar li {
-    margin-right: 20px;
-}
 
-.navbar li:last-child {
-    margin-right: 0;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: hsl(0, 99%, 26%);
+nav ul li {
     font-size: 18px;
-    text-shadow: 2px 2px #000;
+    font-family: 'Arial', sans-serif;  
+    cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-    color: #ff5722;
+
+nav ul li:hover {
+    color: #e63946; 
 }
 
-.navbar li:hover {
-    cursor: pointer;
-}
 
-.navbar-title {
-    color: #f44336;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px #000;
-    margin: 0; 
-}
-
-.navbar-cart {
-    font-size: 1.5rem;
-    color: #f44336;
-    margin-left: 20px;
-    cursor: pointer;
-    position: relative;
-}
-
-.cart-count {
-    position: absolute;
-    top: -8px;
-    right: -12px;
-    background-color: #ff5722;
-    color: #fff;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 0.8rem;
+nav ul li.active {
+    color: #e63946;
+    font-weight: bold;
 }
