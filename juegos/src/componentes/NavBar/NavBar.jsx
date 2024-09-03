@@ -2,6 +2,7 @@
 import "./NavBar.css"
 import CarWidget from '../CarWidget/CarWidget';
 
+
 function NavBar() {
   return (
     <header>
