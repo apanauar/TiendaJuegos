@@ -4,10 +4,7 @@ import ItemDetailContainer from './componentes/Itemdetailcontainer/ItemDetailCon
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 import NavBar from './componentes/NavBar/NavBar'
 import {BrowserRouter,Route,Routes} from "react-router-dom"
-import Historia from './componentes/Historia/Historia'
-import Soul from './componentes/Soul/Soul'
-import Accion from './componentes/Accion/Accion'
-import Todos from './componentes/Todos/Todos'
+
 
 
 function App() {
@@ -16,14 +13,11 @@ function App() {
   <BrowserRouter>
   <NavBar/>
   <Routes>
-    <Route path="/Historia" element={<Historia/>}/>
-    <Route path="/Soul" element={<Soul/>}/>
-    <Route path="/Accion" element={<Accion/>}/>
-    <Route path="/" element={<Todos/>}/>
+    <Route path="/" element={<ItemListContainer/>}/>
+    <Route path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
+    <Route path="/item/:idItem" element={<ItemDetailContainer/>}/>
   </Routes>
   </BrowserRouter>
-  <ItemListContainer/>
-  <ItemDetailContainer/>
   </>
   )
 }

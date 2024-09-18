@@ -1,5 +1,7 @@
 import React from 'react'
 import './Estilo.css'
+import { Link } from 'react-router-dom'
+
 const Item = ({id, nombre, precio , img}) => {
   return (
     <div className='item-card'>
@@ -7,7 +9,7 @@ const Item = ({id, nombre, precio , img}) => {
         <h3>Nombre: {nombre}</h3>
         <p>Precio: {precio}</p>
         <p>ID: {id}</p>
-        <button>Ver Mas</button>
+        <Link to={`/item/${id}`} >Ver Detalles</Link>
     </div>
   )
 }
