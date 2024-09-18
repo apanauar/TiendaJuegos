@@ -49,3 +49,7 @@ nav ul li.active {
     color: #e63946;
     font-weight: bold;
 }
+.logo{
+    width: 50%;
+    border-radius: 45%;
+}

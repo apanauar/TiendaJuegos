@@ -1,0 +1,53 @@
+.item-card {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #20232a;
+    color: #fff;
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen del producto */
+.item-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Nombre del producto */
+.item-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Precio del producto */
+.item-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Botón de acción */
+.item-card button {
+    background-color: hsl(240, 3%, 93%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #20232a;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-card button:hover {
+    background-color: hwb(203 1% 67%);
+}
