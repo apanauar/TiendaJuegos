@@ -1,3 +1,9 @@
+
+a{
+    color:hsl(50, 14%, 92%);
+    text-decoration: none
+}
+
 header {
     background-color: #1c1c1c;  
     padding: 20px;
@@ -33,23 +39,21 @@ nav ul {
 
 
 nav ul li {
+    
     font-size: 18px;
     font-family: 'Arial', sans-serif;  
     cursor: pointer;
     transition: color 0.3s ease;
 }
-
-
-nav ul li:hover {
-    color: #e63946; 
+nav ul li :hover{
+    color: hsl(0, 0%, 72%);
 }
 
 
-nav ul li.active {
-    color: #e63946;
-    font-weight: bold;
-}
 .logo{
     width: 50%;
     border-radius: 45%;
 }
+
+
+
