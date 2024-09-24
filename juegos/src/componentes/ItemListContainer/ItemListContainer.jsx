@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import { getProductos,productosCategorias } from "../../asinmock"
 import ItemList from "../itemlist/ItemList"
-import Hooks from "../hooks/Hooks"
 import { useParams } from "react-router-dom"
 
 

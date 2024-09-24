@@ -1,5 +1,6 @@
 
 import './App.css'
+import Formulario from './componentes/Formulario/Formulario'
 import ItemDetailContainer from './componentes/Itemdetailcontainer/ItemDetailContainer'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 import NavBar from './componentes/NavBar/NavBar'
@@ -17,8 +18,10 @@ function App() {
     <Route path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
     <Route path="/item/:idItem" element={<ItemDetailContainer/>}/>
   </Routes>
+  
   </BrowserRouter>
   </>
+  
   )
 }
 
