@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <header>
       <Link to="/">
-        <img className="logo" src="../imagen/NpLogo.png" alt="logo" />
+        <img className="logo" src="../public/imagen/NpLogo.png" alt="logo" />
       </Link>
         <nav>
             <ul>
