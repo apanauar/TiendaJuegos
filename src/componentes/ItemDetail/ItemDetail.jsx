@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CarritoContext } from '../../context/CarritoContex'
 import { useContext } from 'react'
-import Contador from "../Contador/Contador"; 
+import Counter from "../Contador/Counter"
 import "./ItemDetail.css"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -34,7 +34,7 @@ const ItemDetail = ({id,nombre,precio,img,description,stock,}) => {
       <img src={img} alt={nombre} />
       <p>Descripcion:{description}</p>
       {
-        agregarCantidad > 0?(<Link to="/cart" className="linkeado">terminar de comprar</Link>) :(<Contador inicial={1} stock={stock} funcionAgregar={manejarCantidad}/>)
+        agregarCantidad > 0?(<Link to="/cart" className="linkeado">terminar de comprar</Link>) :(<Counter inicial={1} stock={stock} funcionAgregar={manejarCantidad}/>)
       }
     </div>
   )
