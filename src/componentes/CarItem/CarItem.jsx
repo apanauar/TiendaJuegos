@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 import { CarritoContext } from '../../context/CarritoContex'
-import ItemDetail from '../Itemdetail/ItemDetail'
+import ItemDetail from '../ItemDetail/ItemDetail'
 
 
 const CarItem = ({item,cantidad,}) => {
