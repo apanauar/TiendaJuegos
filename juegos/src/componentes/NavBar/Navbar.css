@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 a{
     color:hsl(50, 14%, 92%);
     text-decoration: none
@@ -12,11 +12,10 @@ header {
     justify-content: space-between; 
     color: #fff;  
     width: 100%;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
 }
 header h1 {
     font-size: 24px;
-    font-family: 'Arial', sans-serif; 
     margin: 0;
 }
 
@@ -41,7 +40,7 @@ nav ul {
 nav ul li {
     
     font-size: 18px;
-    font-family: 'Arial', sans-serif;  
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -51,8 +50,8 @@ nav ul li :hover{
 
 
 .logo{
-    width: 50%;
-    border-radius: 45%;
+    width:68px;
+
 }
 
 

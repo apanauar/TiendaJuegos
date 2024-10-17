@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.item-detail {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 60px;
+    margin: 20px auto; 
+    width: 70%; 
+    max-width: 1200px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eaeaea; 
+    font-family: 'Poppins', sans-serif;
+}
+.item-detail h2 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.item-detail:hover {
+    background-color: #1f1f1f; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.item-detail h3 {
+    font-size: 2rem;
+    color: #ff6347; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.item-detail p {
+    font-size: 1.1rem;
+    color: #c0c0c0; 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.item-detail .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6347; 
+}
+
+.item-detail button {
+    background-color: #ff6347; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.item-detail button:hover {
+    background-color: #ff4500; 
+}
+.linkeado{
+    display: inline-block;
+    background-color: #ff6347; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1rem; 
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+}
+.linkeado :hover{
+    background-color: #ff4500; 
+}

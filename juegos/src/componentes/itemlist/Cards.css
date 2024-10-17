@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+
+
 .contenedorProductos{
     display: flex;
-    flex-wrap: wrap; /* Para que las tarjetas se acomoden en varias filas si el espacio horizontal no es suficiente */
-    justify-content: space-around; /* Distribuye el espacio de manera uniforme */
-    gap: 20px; /* Espacio entre las tarjetas */
-    padding: 10px; /* Espaciado alrededor del contenedor */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 20px;
+    padding: 10px; 
+    font-family: 'Poppins', sans-serif;
 }
 .contenedorProductos  :hover{
     color: hwb(190 88% 0%) ;

@@ -1,0 +1,125 @@
+
+
+
+
+.checkout-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.checkout-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.checkout-form label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+.checkout-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.checkout-form input:focus {
+    border-color: #0077b6;
+    outline: none;
+    background-color: #fff;
+}
+
+
+.error-message {
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.checkout-button {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #005f99;
+}
+
+
+.confirmation-message {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.producto-info {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; 
+}
+p.producto-info{
+    font-size: 1.3em;
+}
+
+.producto-nombre {
+    margin-right: 15px; 
+}
+p.producto-nombre{
+    font-size: 1.3em;
+}
+.swal-button-custom {
+    background-color: #D65510; 
+    color: white; 
+    border: none;
+}
+.swal-button-custom:hover {
+    border: #8c370a;
+}
+
+

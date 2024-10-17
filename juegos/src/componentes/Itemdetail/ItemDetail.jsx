@@ -1,26 +1,40 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { CarritoContext } from '../../context/CarritoContex'
+import { useContext } from 'react'
 import Contador from '../contador/contador'
+import "./ItemDetail.css"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const ItemDetail = ({id,nombre,precio,img,description,stock}) => {
+
+
+
+
+const ItemDetail = ({id,nombre,precio,img,description,stock,}) => {
 
   const [agregarCantidad,setAgregarCantidad]= useState(0)
-  const manejarCantidad = (cantiad)=>{
-    setAgregarCantidad(cantiad)
+  const{agregarAlCarrito} =useContext(CarritoContext)
+  const manejarCantidad = (cantidad)=>{
+    setAgregarCantidad(cantidad)
+    const item = {id,nombre,precio}
+    agregarAlCarrito(item,cantidad)
+    toast.success(`${nombre} agregado al carrito!`, {
+      autoClose: 3000,
+    });
   }
 
 
   return (
-    <div>
+    <div className='item-detail'>
       <h2>Nombre: {nombre}</h2>
-      <h3>Precio {precio}</h3>
-      <h3>ID:{id}</h3>
+      <h3>Precio: ${precio}</h3>
       <img src={img} alt={nombre} />
       <p>Descripcion:{description}</p>
       {
-        agregarCantidad > 0?(<Link to="/cart">terminar de comprar</Link>) :(<Contador inicial={1} stock={stock} funcionAgregar={manejarCantidad}/>)
+        agregarCantidad > 0?(<Link to="/cart" className="linkeado">terminar de comprar</Link>) :(<Contador inicial={1} stock={stock} funcionAgregar={manejarCantidad}/>)
       }
     </div>
   )

@@ -1,12 +1,19 @@
 
 import "./CarWidget.css"
-
+import { useContext } from "react"
+import { CarritoContext } from "../../context/CarritoContex"
+import { Link } from "react-router-dom"
 
 function CarWidget() {
+  const {cantidadTotal} = useContext(CarritoContext)
   return (
     <div className="carrito">
-      <img className="imgCarrito" src="https://cdn.pixabay.com/photo/2017/03/29/04/09/shopping-icon-2184065_1280.png" alt="Carrito" />
-      <strong>4</strong>
+      <Link to="/Cart">
+      <img className="imgCarrito" src="../imagen/carrito.png" alt="Carrito" />
+      </Link>
+      {
+        cantidadTotal > 0 && <strong>{cantidadTotal}</strong>
+      }
     </div>
     )
 
